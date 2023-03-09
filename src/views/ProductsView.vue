@@ -1,20 +1,21 @@
-<script>
-import FetchStore from '../components/Fetchstore.vue'
-import TotalSum from '../components/TotalSum.vue';
+<template>
+  <main>
+    <h1>Produkter</h1>
+    <FetchStore />
+  </main>
+</template>
 
-export default {
-  components: {
-    FetchStore,
-    TotalSum
+<script>
+  import FetchStore from '../components/FetchStore.vue'
+
+  export default {
+    components: {
+      FetchStore
+    }
   }
-}
 </script>
 <style lang="scss" scoped>
-h1{
-  color: #031924}
+  h1 {
+    color: #031924;
+  }
 </style>
-<template>
-  <h1>Produkter</h1>
-  <FetchStore />
-  <TotalSum />
-</template>
