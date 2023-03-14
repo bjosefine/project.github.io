@@ -46,6 +46,8 @@
   }
 </script>
 <style lang="scss">
+  $navColor: #222e36;
+  $navTextColor: #c3c6c8;
   body {
     font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 100;
@@ -54,9 +56,10 @@
     position: fixed;
     z-index: 100;
     width: 100%;
+    color: $navTextColor;
   }
   .navHeader {
-    background-color: beige;
+    background-color: $navColor;
     display: flex;
     justify-content: space-between;
   }
@@ -76,10 +79,10 @@
   .cartIcon a,
   .navHeaderTitle a {
     text-decoration: none;
-    color: black;
+    color: $navTextColor;
   }
   .navList {
-    background-color: beige;
+    background-color: $navColor;
     opacity: 80%;
     margin: 0;
     padding: 0;
@@ -95,7 +98,7 @@
   }
   .navListItems a {
     text-decoration: none;
-    color: black;
+    color: $navTextColor;
   }
   /* for tablet  */
   @media screen and (min-width: 810px) {
@@ -103,7 +106,6 @@
       display: none;
     }
     .navHeader {
-      background-color: beige;
       display: flex;
       justify-content: space-between;
     }

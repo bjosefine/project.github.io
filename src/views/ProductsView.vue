@@ -14,8 +14,3 @@
     }
   }
 </script>
-<style lang="scss" scoped>
-  h1 {
-    color: #031924;
-  }
-</style>
